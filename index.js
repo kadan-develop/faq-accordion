@@ -1,15 +1,17 @@
 "use-static";
 
-const iconBtn = document.querySelectorAll(".icon");
+const h2El = document.querySelectorAll("h2");
 
-iconBtn.forEach((el) => {
+h2El.forEach((el) => {
   el.addEventListener("click", () => {
-    if (el.nextElementSibling.className === "hide") {
-      el.nextElementSibling.classList.remove("hide");
-      el.attributes.src.nodeValue = "./assets/images/icon-minus.svg";
+    if (el.nextElementSibling.nextElementSibling.className === "hide") {
+      el.nextElementSibling.nextElementSibling.classList.remove("hide");
+      el.nextElementSibling.attributes.src.nodeValue =
+        "./assets/images/icon-minus.svg";
     } else {
-      el.nextElementSibling.classList.add("hide");
-      el.attributes.src.nodeValue = "./assets/images/icon-plus.svg";
+      el.nextElementSibling.nextElementSibling.classList.add("hide");
+      el.nextElementSibling.attributes.src.nodeValue =
+        "./assets/images/icon-plus.svg";
     }
   });
 });

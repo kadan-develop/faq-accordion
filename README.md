@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/kadan-develop/faq-accordion)
+- Live Site URL: [Solution](https://timely-gingersnap-16da2d.netlify.app)
 
 ## My process
 

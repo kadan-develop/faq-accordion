@@ -1,17 +1,17 @@
 "use-static";
 
-const h2El = document.querySelectorAll("h2");
+const que = document.querySelectorAll(".question");
+const img = document.querySelectorAll(".icon");
+const para = document.querySelectorAll(".question p");
 
-h2El.forEach((el) => {
-  el.addEventListener("click", () => {
-    if (el.nextElementSibling.nextElementSibling.className === "hide") {
-      el.nextElementSibling.nextElementSibling.classList.remove("hide");
-      el.nextElementSibling.attributes.src.nodeValue =
-        "./assets/images/icon-minus.svg";
+que.forEach((q, index) => {
+  q.addEventListener("click", () => {
+    if (para[index].style.display == "block") {
+      para[index].style.display = "none";
+      img[index].setAttribute("src", "./assets/images/icon-plus.svg");
     } else {
-      el.nextElementSibling.nextElementSibling.classList.add("hide");
-      el.nextElementSibling.attributes.src.nodeValue =
-        "./assets/images/icon-plus.svg";
+      para[index].style.display = "block";
+      img[index].setAttribute("src", "./assets/images/icon-minus.svg");
     }
   });
 });

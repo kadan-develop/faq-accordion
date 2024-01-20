@@ -81,6 +81,7 @@ h2:hover {
 
 .icon {
   width: 30px;
+  cursor: pointer;
 }
 
 p {
